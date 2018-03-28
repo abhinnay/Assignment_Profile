@@ -1,0 +1,437 @@
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <style>
+	
+	
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+   
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+}
+ .listitems {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            line-height: 3px;
+            border-radius: 3em;
+            background: #ffffff;
+            margin: 0 1em;
+            display: inline-block;
+            color: white;
+            position: relative;
+            border: dashed 2px #00ff21;
+        }
+
+            .listitems::before {
+                content: '';
+                position: absolute;
+                top: 27px;
+                left: -4em;
+                width: 4em;
+                height: 3px;
+                background: #00ff21;
+                z-index: -1;
+            }
+
+
+            .listitems:first-child::before {
+                display: none;
+            }
+
+        .active {
+            background: white;
+        }
+
+            .active ~ li {
+                background:black;
+            }
+
+                .active ~ li::before {
+                    background: #00ff21;
+                } 
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+   <nav class="navbar navbar-inverse" style="height:100px;background-color:#17202A;position:sticky;top:0;z-index:1;margin:0">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="cp.jpg" style="height:80px;width:100%"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+ 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-home" style="color:white;padding-left:20px"></span></a></li>
+		<li><a href="#" style="color:white">My Network</a></li>
+        <li><a href="#" style="color:white">My Profile</a></li>
+		<li ><a style="padding-top:10px;color:white" href="#">Hello,Sai
+		<img src="e1.jpg" style="border-radius:50%;border:2px solid green;max-width:35px;max-height:35px;margin-left:5px"></a></li>
+		<li><a href="#" style="color:white">LogOut</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+
+   
+ 
+ <div class="container-fluid" style="background-color:#E5E7E9">
+	<div class="row">
+	         <div class="col-md-1 col-sm-1">
+		     </div>
+		      <div class="col-md-10 col-sm-10" style="background-color:white;margin-top:30px;margin-bottom:30px">
+			      <div class="container-fluid">
+	                    <div class="row">
+	    <div class="col-md-1 col-sm-1">
+		</div>
+		 <div class="col-md-10 col-sm-10" style="background-color:white;;padding-bottom:30px">
+		    <div class="row">
+		        <div class="col-md-2 col-sm-2">
+				</div>
+			 <div class="col-md-10 col-sm-10">	
+			<br /><br />
+			
+    <ul style="padding-left:-60px">
+        <a href="#"><li class="listitems"> 
+            <img class="rounded-circle" src="e5.jpg" height="40px" width="40px" /><br /><br /><br /><br />
+            <p style="color:green;text-align:center;padding-top:20px">
+                personal<br /><br />  <br /><br />
+              Information
+            </p>
+        </li></a>
+
+       <a href="#"> <li class="listitems"><img class="rounded-circle" src="e1.jpg" height="40px" width="40px" /><br /><br /><br /><br />
+            <p style="color:green;text-align:center;padding-top:20px">
+                Add<br /><br />  <br /><br />
+                Talents
+            </p>
+        </li></a>
+        <a href="#"><li class="listitems"><img class="rounded-circle" src="f2.jpg" height="40px" width="40px" /><br /><br /><br /><br />
+        <p style="color:green;text-align:center;padding-top:20px">
+            Work<br /><br /><br /><br />
+             Experience
+        </p>
+		</li></a>
+        <a href="#"><li class="listitems"> <img class="rounded-circle" src="a4.jpg" height="40px" width="40px" /><br /><br /><br /><br />
+        <p style="color:green;text-align:center;padding-top:20px">
+            Award& <br /><br />  <br /><br /> 
+            Recognition 
+        </p></li></a>
+       <a href="#"> <li class="listitems"><img class="rounded-circle" src="u.png" height="40px" width="40px" /><br /><br /><br /><br />
+        <p style="color:green;text-align:center;padding-top:20px">
+            Upload  <br /><br />  <br /><br />
+            Portfolio
+        </p>
+		</li ></a>
+        <a href="#"><li class="listitems"><img class="rounded-circle" src="s1.jpg" height="40px" width="40px" /><br /><br /><br /><br />
+        <p style="color:green;text-align:center;padding-top:20px">
+            Social<br /><br /><br /><br />
+            Media
+        </p></li></a>
+       <a href="#"> <li class="listitems"><img class="rounded-circle" src="j.png" height="40px" width="40px" /><br /><br /><br /><br />
+        <p style="color:green;text-align:center;padding-top:20px">
+            User   <br /><br />  <br /><br />
+            Settings
+        </p></li></a>
+         </ul>
+			</div>
+			 <div class="col-md-2 col-sm-2">
+			 </div>
+	    </div>
+	</div>
+	
+	
+	<div class="row">
+	     <div class="row">
+		
+		     <div class="col-md-2 col-sm-2">
+					  </div> 
+					  <div class="col-md-3 col-sm-3">
+							  <input type="text" id="fname" name="firstname" placeholder="Name..">
+					   </div>	
+					   <div class="col-md-3 col-sm-3">
+							<form> <input type="text" id="fname" name="firstname" placeholder="Email*.."></form>
+					   </div>	
+						<div class="col-md-3 col-sm-3">
+							<form> <input type="text" id="fname" name="firstname" placeholder="Age.."></form>
+						</div>
+					   <div class="col-md-1 col-sm-1">
+					   </div>		
+				</div>
+				     <div class="row">
+					  <div class="col-md-2 col-sm-2">
+					  </div> 
+					  <div class="col-md-3 col-sm-3">
+							  <form> <input type="text" id="fname" name="firstname" placeholder="Phone No.."></form>
+					   </div>	
+					   <div class="col-md-3 col-sm-3">
+							<form> <input type="text" id="fname" name="firstname" placeholder="Height(cm).."></form>
+					   </div>	
+						<div class="col-md-3 col-sm-3">
+							<form> <input type="text" id="fname" name="firstname" placeholder="Weight(kg).."></form>
+						</div>
+					   <div class="col-md-1 col-sm-1">
+					   </div>		
+				</div>
+				     <div class="row">
+					  <div class="col-md-2 col-sm-2 ">
+					  </div> 
+					  <div class="col-md-3 col-sm-3">
+							  <form> <input type="text" id="fname" name="firstname" placeholder="Complection.."></form>
+					   </div>	
+					   <div class="col-md-3 col-sm-3">
+							<form> <input type="text" id="fname" name="firstname" placeholder="City*.."></form>
+					   </div>	
+						<div class="col-md-3 col-sm-3">
+							<form> <input type="text" id="fname" name="firstname" placeholder="Country*.."></form>
+						</div>
+					   <div class="col-md-1 col-sm-1 ">
+					   </div>		  
+		
+	                 </div>
+	</div>
+	   
+	   
+	   
+	   
+	   <div class="row" >
+					 <div class="col-md-2 col-sm-2">
+					   </div>
+					    <div class="col-md-10 col-sm-10" style="width:75%;border: 1px solid #ccc;border-radius:15px">
+						    <div class="row"><br/>
+							     <h5 style="color:#5D6D7E;padding-left:85px">Category*</h5>
+							</div>
+						    <div class="row">
+							    <div class="col-md-1 col-sm-1 ">
+								</div>
+								<div class="col-md-2 col-sm-2">
+								   <form>
+								    <label class="checkbox-inline">
+									  <input type="checkbox" value="" style="border: opx solid #ccc"><span style="color:#5D6D7E">Actors</span>
+									</label>
+									</form>
+								</div>
+								
+									<div class="col-md-3 col-sm-3">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""> <span style="color:#5D6D7E">Casting Director</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Dubbing Artist</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Music Director</p></span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-1 col-sm-1">
+								   <form>
+									<label class="checkbox-inline">
+									<input type="checkbox" value=""><span style="color:#5D6D7E">Writter</span>
+									</label>
+								  </form>
+							        </div>
+									<div class="col-md-1 col-sm-1 ">
+									</div>
+						</div>			
+					   
+					    <div class="row">
+						           <div class="col-md-1 col-sm-1">
+					               </div>
+									<div class="col-md-2 col-sm-2">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Actress</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-3 col-sm-3">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Choreographer</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Editor</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+									<form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Producer</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+									</div>
+								 </div>  
+						
+						        <div class="row">
+						           <div class="col-md-1 col-sm-1">
+					               </div>
+									<div class="col-md-2 col-sm-2">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Anchor</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-3 col-sm-3">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Dancer</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">FightDirector</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+									<form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Singers</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+									</div>
+								   
+						</div>
+						
+						
+						      <div class="row">
+						           <div class="col-md-1 col-sm-1">
+					               </div>
+									<div class="col-md-2 col-sm-2">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Cameraman</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-3 col-sm-3">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Directors</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+								   <form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Model</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+									<form>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value=""><span style="color:#5D6D7E">Technicians</span>
+									</label>
+									</form>
+									</div>
+									<div class="col-md-2 col-sm-2">
+									</div>
+								   
+						</div>
+	
+	
+	</div>
+	
+	
+	
+	                      <div class="row" style="margin:100px;">
+						    <div class="col-md-1 col-sm-1">
+							</div>
+		     		     <div class="col-md-10 col-sm-10">
+						  <br><br>
+                            <textarea rows="6" cols="80" placeholder="Description..." style="border-radius:15px;width:100%">
+                       
+                            </textarea>
+                         </div>
+						 <div class="col-md-1 col-sm-1">
+							</div>
+						 
+						 </div>
+	
+	
+	
+	
+	                   <div class="row" style="margin-top:30px">
+						        <div class="col-md-3 col-sm-3">
+									</div>
+									<div class="col-md-2 col-sm-2">
+									     <button type="button" class="btn btn-default btn-sm" style="width:100px">
+                                       <span class="glyphicon glyphicon-arrow-left"></span> 
+                                         </button> 
+									</div>
+									<div class="col-md-3 col-sm-3">
+									     <button type="button" class="btn btn-success">Save changes</button>
+									</div>
+									<div class="col-md-1 col-sm-1">
+									 <button type="button" class="btn btn-default btn-sm" style="width:100px">
+                                     <span class="glyphicon glyphicon-arrow-right"></span> 
+                                   </button>
+									</div>
+									<div class="col-md-3 col-sm-3">
+									</div>
+						   </div>
+	
+	
+	
+	
+	</div>
+	</div>
+	
+	
+	
+	
+		     <div class="col-md-1 col-sm-1">
+		     </div>
+			 </div>
+</div>
+   
+
+
+
+
+ 
+	 
+</body>
+</html>
